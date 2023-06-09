@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+:root {
+  --yellow-orange: rgb(246, 187, 79);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+#banner-box {
+  width: 100%;
+  height: 400px;
+}
+#banner-image {
+  background-image: url("./Images/beach3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+#bg-color-image {
+  width: 1200px;
+  height: 100px;
+  background-color: var(--yellow-orange);
+  opacity: 0.7;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+#banner-image h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+#grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 100px;
+}
+.grid-item {
+  height: 470px;
+  width: 600px;
+}
+.grid-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.grid-item h2 {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.grid-item p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.top-image-decoration {
+  width: 100%;
+  height: 8px;
+  background-color: var(--yellow-orange);
+}
